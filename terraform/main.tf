@@ -47,6 +47,7 @@ resource "aiven_pg_user" "app_user" {
 # Atenção: ao contrário do Postgres (plano "hobbyist", gratuito em contas
 # elegíveis), o Aiven for Apache Kafka normalmente exige um plano pago
 # (ex: "startup-2"). Confirme o plano disponível na sua conta antes do apply.
+/*
 resource "aiven_kafka" "events" {
   project      = var.aiven_project
   cloud_name   = var.cloud_name
@@ -61,7 +62,8 @@ resource "aiven_kafka" "events" {
     }
   }
 }
-
+*/
+/*
 resource "aiven_kafka_topic" "bcb_indicadores" {
   project      = var.aiven_project
   service_name = aiven_kafka.events.service_name
@@ -69,13 +71,16 @@ resource "aiven_kafka_topic" "bcb_indicadores" {
   partitions   = 1
   replication  = 2
 }
+*/ 
 
 # ---------------------------------------------------------------------------
 # Grafana — exploração visual dos dados do Postgres
 # ---------------------------------------------------------------------------
+/*
 resource "aiven_grafana" "dashboards" {
   project      = var.aiven_project
   cloud_name   = var.cloud_name
   plan         = var.grafana_plan
   service_name = var.grafana_service_name
 }
+*/
