@@ -12,6 +12,7 @@ output "pg_port" {
   value = aiven_pg.dashboard_db.service_port
 }
 
+/*
 output "kafka_bootstrap_servers" {
   description = "host:port para KAFKA_BOOTSTRAP_SERVERS"
   value       = "${aiven_kafka.events.service_host}:${aiven_kafka.events.service_port}"
@@ -38,3 +39,5 @@ output "grafana_uri" {
   value       = aiven_grafana.dashboards.service_uri
   sensitive   = true
 }
+
+*/
