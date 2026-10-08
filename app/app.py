@@ -14,6 +14,7 @@ Variáveis de ambiente esperadas (ver .env.example):
   PORT           -> porta HTTP (default 8080)
   CACHE_HOURS    -> horas antes de buscar dados novos na API (default 6)
 """
+''' comentario teste'''
 
 import os
 import time
